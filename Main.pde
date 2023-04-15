@@ -8,7 +8,7 @@ public void setup() {
     sort.draw();
 }
 
-public void keyPressed() {
+public void keyPressed() { // Step forward every space press
     background(0);
 
     if (key == ' ') {

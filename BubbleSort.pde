@@ -7,7 +7,7 @@ public class BubbleSort extends Algorithm {
         lastSortedIndex = list.length - 1;
     }
 
-    public int step() {
+    public int step() { // Bubble sort step by step
         if (Utils.isSorted(list)) {
             return -1;
         }
@@ -32,6 +32,7 @@ public class BubbleSort extends Algorithm {
     public void draw() {
         super.draw();
 
+        // For adding the green circle
         float startX = width * 0.5 - (WIDTH * (list.length - 1) + SPACING * (list.length - 1)) * 0.5;
 
         fill(0, 255, 0);
