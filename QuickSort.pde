@@ -1,28 +1,14 @@
-public class BubbleSort extends Algorithm {
+public class QuickSort {
     private int i = 0;
     private int j = 0;
 
-    public BubbleSort(int[] list) {
+    public QuickSort(int[] list) {
         super(list);
+        lastSortedIndex = list.length - 1;
     }
 
-    public int step() { // Bubble sort step by step
-        if (i > list.length) {
-            return;
-        }
-
-        if (list[j] > list[j + 1]) {
-            int temp = list[j];
-            list[j] = list[j + 1];
-            list[j + 1] = temp;
-        }
-
-        j++;
-
-        if (j > list.length - i) {
-            i++;
-            j = 0;
-        }
+    public int step() { // Quick sort step by step
+        
 
         return super.step();
     }
@@ -39,4 +25,6 @@ public class BubbleSort extends Algorithm {
         fill(0);
         text(list[j], startX + j * (WIDTH + SPACING), height * 0.5);
     }
+
+    
 }

@@ -1,4 +1,4 @@
-Algorithm sort = new BubbleSort(new int[]{1782, 7281, 6990, 1644, 9111, 4710, 4525, 7867, 2762, 4887});
+Algorithm sort = new QuickSort(new int[]{1782, 7281, 6990, 1644, 9111, 4710, 4525, 7867, 2762, 4887});
 
 public void setup() {
     size(500, 500);
